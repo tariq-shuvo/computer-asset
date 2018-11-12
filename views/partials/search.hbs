@@ -1,0 +1,27 @@
+<section id="search_panel">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-12">
+                <div class="search_content">
+                    <form action="" id="search_form" name="search_form" method="get">
+                        <div class="form-group search-option">
+                            <select name="select_type" id="select_type">
+                                <option value="">Select Any One</option>
+                                {{#each selectOptions}}
+                                    <option value="{{this.value}}">{{this.title}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                        <div class="form-group search-option">
+                            <select name="select_category" id="select_category">
+                                <option value="">Select Your Components</option>
+                            </select>
+                            <input type="text" id="search_bar_category">
+                        </div>
+                        <input type="submit" class="btn btn-info search_btn" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

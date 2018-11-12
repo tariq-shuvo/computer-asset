@@ -1,0 +1,30 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="download-content text-right">
+                    <button class="download-btn red" id="pdf_download"><i class="far fa-file-pdf"></i></button>
+                    <button class="download-btn green" id="excel_download"><i class="far fa-file-excel"></i></button>
+                    <a class="download-btn blue" href="#" id="csv_download"><i class="fas fa-file-csv"></i></a>
+                </div>
+                <div class="table_content">
+                    <table id="table">
+                        <thead>
+                        <tr>
+                            {{#each tableHeader}}
+                                <th>{{this}}</th>
+                            {{/each}}
+                        </tr>
+                        </thead>
+                        <tbody class="dataBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    var baseURL = '{{baseURL}}';
+</script>
