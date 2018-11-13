@@ -45,6 +45,8 @@ $(document).on('submit','#search_form',function (e) {
 
     if(category_value==='*' && category_value!=='')
     {
+
+
         $.ajax({
             contentType: 'application/x-www-form-urlencoded',
             dataType: 'json',
@@ -71,6 +73,8 @@ $(document).on('submit','#search_form',function (e) {
 
                 $(".dataBody").html(table);
 
+                $("#mynetwork").css('display','none');
+
                 $.getScript( "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js", function( data, textStatus, jqxhr ) {
                     $.getScript( baseURL+"js/jquery.basictable.min.js", function( data, textStatus, jqxhr ) {
                         $('#table').basictable({
@@ -87,6 +91,10 @@ $(document).on('submit','#search_form',function (e) {
     }
 
     if(category_value!=='*' && category_value!==''){
+
+        var nodes_data=[{id: 1, label: category_value}],edges_data=[];
+
+
         $.ajax({
             contentType: 'application/x-www-form-urlencoded',
             dataType: 'json',
@@ -97,6 +105,7 @@ $(document).on('submit','#search_form',function (e) {
                 category_value:category_value,
             },
             success: function(data) {
+                var count=2;
                 $(data).each(function (i) {
                     table+="<tr>";
                     table+="<td>"+data[i]['date']+"</td>";
@@ -109,9 +118,35 @@ $(document).on('submit','#search_form',function (e) {
                     table+="<td>"+data[i]['source_port']+"</td>";
                     table+="<td>"+data[i]['destination_port']+"</td>";
                     table+="</tr>";
+                    if(data[i]['source_ip']==data[i]['destination_ip'])
+                    {
+                        nodes_data.push({id: count, label: data[i]['ip']+"\n"+data[i]['destination_port']});
+                        edges_data.push({from: 1, to: count});
+                        count++;
+                    }
+
                 });
 
                 $(".dataBody").html(table);
+
+                $("#mynetwork").css('display','block');
+
+                // create an array with nodes
+                var nodes = new vis.DataSet(nodes_data);
+
+                // create an array with edges
+                var edges = new vis.DataSet(edges_data);
+
+                // create a network
+                var container = document.getElementById('mynetwork');
+                var data = {
+                    nodes: nodes,
+                    edges: edges
+                };
+                var options = {
+                    dragNodes:false
+                };
+                var network = new vis.Network(container, data, options);
 
                 $.getScript( "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js", function( data, textStatus, jqxhr ) {
                     $.getScript( baseURL+"js/jquery.basictable.min.js", function( data, textStatus, jqxhr ) {

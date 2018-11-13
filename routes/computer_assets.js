@@ -168,6 +168,7 @@ router.get('/connections',(req, res)=>{
         "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
         settings.baseURL+"css/style.css",
         settings.baseURL+"css/basictable.css",
+        settings.baseURL+"css/vis.min.css",
         settings.baseURL+"css/media.css"
     ];
     const scripts =[
@@ -175,6 +176,7 @@ router.get('/connections',(req, res)=>{
         "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js",
         settings.baseURL+"js/jquery.basictable.min.js",
         settings.baseURL+"js/common_scripts.js",
+        settings.baseURL+"js/vis.min.js",
         settings.baseURL+"js/connections_scripts.js"
     ];
     const header = {
