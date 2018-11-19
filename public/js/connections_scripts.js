@@ -118,9 +118,9 @@ $(document).on('submit','#search_form',function (e) {
                     table+="<td>"+data[i]['source_port']+"</td>";
                     table+="<td>"+data[i]['destination_port']+"</td>";
                     table+="</tr>";
-                    if(data[i]['source_ip']==data[i]['destination_ip'])
+                    if(data[i]['ip']==data[i]['destination_ip'] || data[i]['ip']==data[i]['source_ip'])
                     {
-                        nodes_data.push({id: count, label: data[i]['ip']+"\n"+data[i]['destination_port']+"\n"+data[i]['protocol']+"\n"+data[i]['tcp_win']});
+                        nodes_data.push({id: count, label: data[i]['source_ip']+"\n"+data[i]['destination_ip']+"\n"+data[i]['destination_port']+"\n"+data[i]['protocol']+"\n"+data[i]['tcp_win']});
                         edges_data.push({from: 1, to: count});
                         count++;
                     }
