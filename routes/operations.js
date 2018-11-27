@@ -10,7 +10,14 @@ router.get('/hw/:hwoption',(req, res, next)=>{
         const column_name = req.params.hwoption;
         const fields ={};
         fields[column_name]=true;
-        HW.find({},fields,(err, results) => {
+        // HW.find({},fields,(err, results) => {
+        //     // Note that this error doesn't mean nothing was found,
+        //     // it means the database had an error while searching, hence the 500 status
+        //     if (err) return res.status(500).send(err);
+        //     // send the list of all people
+        //     return res.status(200).json(results);
+        // });
+        HW.find().distinct(column_name, (err, results) => {
             // Note that this error doesn't mean nothing was found,
             // it means the database had an error while searching, hence the 500 status
             if (err) return res.status(500).send(err);
@@ -49,7 +56,14 @@ router.get('/sw/:swoption',(req, res, next)=>{
     const column_name = req.params.swoption;
     const fields ={};
     fields[column_name]=true;
-    SW.find({},fields,(err, results) => {
+    // SW.find({},fields,(err, results) => {
+    //     // Note that this error doesn't mean nothing was found,
+    //     // it means the database had an error while searching, hence the 500 status
+    //     if (err) return res.status(500).send(err);
+    //     // send the list of all people
+    //     return res.status(200).json(results);
+    // });
+    SW.find().distinct(column_name, (err, results) => {
         // Note that this error doesn't mean nothing was found,
         // it means the database had an error while searching, hence the 500 status
         if (err) return res.status(500).send(err);
@@ -93,7 +107,14 @@ router.get('/base/:hwoption',(req, res, next)=>{
     const column_name = req.params.hwoption;
     const fields ={};
     fields[column_name]=true;
-    Home.find({},fields,(err, results) => {
+    // Home.find({},fields,(err, results) => {
+    //     // Note that this error doesn't mean nothing was found,
+    //     // it means the database had an error while searching, hence the 500 status
+    //     if (err) return res.status(500).send(err);
+    //     // send the list of all people
+    //     return res.status(200).json(results);
+    // });
+    Home.find().distinct(column_name, (err, results) => {
         // Note that this error doesn't mean nothing was found,
         // it means the database had an error while searching, hence the 500 status
         if (err) return res.status(500).send(err);
@@ -132,7 +153,7 @@ router.get('/connection/:hwoption',(req, res, next)=>{
     const column_name = req.params.hwoption;
     const fields ={};
     fields[column_name]=true;
-    Connection.find().distinct('computer_name', (err, results) => {
+    Connection.find().distinct(column_name, (err, results) => {
             // Note that this error doesn't mean nothing was found,
             // it means the database had an error while searching, hence the 500 status
             if (err) return res.status(500).send(err);

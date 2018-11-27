@@ -14,7 +14,7 @@ $(document).on('change','#select_type',function (e) {
             type: "GET",
             success: function(data) {
                 $(data).each(function (i) {
-                    options += "<option value='"+data[i][type_value]+"' data-id='"+type_value+"'>"+data[i][type_value]+"</option>";
+                    options += "<option value='"+data[i]+"' data-id='"+type_value+"'>"+data[i]+"</option>";
                 });
 
                 $("#select_category").html(options);
