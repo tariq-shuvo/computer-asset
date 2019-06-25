@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4971d71a-4654-4282-86ac-3e3d4856422f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/connections_scripts.js" afterPath="$PROJECT_DIR$/public/js/connections_scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/home_scripts.js" afterPath="$PROJECT_DIR$/public/js/home_scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/hw_scripts.js" afterPath="$PROJECT_DIR$/public/js/hw_scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sw_scripts.js" afterPath="$PROJECT_DIR$/public/js/sw_scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/operations.js" afterPath="$PROJECT_DIR$/routes/operations.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/config/settings.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -52,7 +47,7 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="650">
               <caret line="26" column="1" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="26" selection-end-column="1" />
               <folding />
             </state>
@@ -62,7 +57,7 @@
       <file leaf-file-name="operations.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/operations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1273">
+            <state relative-caret-position="3875">
               <caret line="155" column="42" lean-forward="false" selection-start-line="155" selection-start-column="42" selection-end-line="155" selection-end-column="42" />
               <folding />
             </state>
@@ -72,7 +67,7 @@
       <file leaf-file-name="sw_scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/sw_scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
+            <state relative-caret-position="600">
               <caret line="24" column="81" lean-forward="false" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
               <folding />
             </state>
@@ -82,7 +77,7 @@
       <file leaf-file-name="hw_scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/hw_scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="375">
               <caret line="15" column="94" lean-forward="false" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
               <folding />
             </state>
@@ -112,7 +107,7 @@
       <file leaf-file-name="search.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partials/search.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
+            <state relative-caret-position="450">
               <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="70" />
               <folding />
             </state>
@@ -214,6 +209,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -334,7 +330,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,7 +340,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.mongoOptions" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/instructory" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -476,17 +471,18 @@
       <workItem from="1543032075045" duration="385000" />
       <workItem from="1543071483982" duration="3564000" />
       <workItem from="1543123470805" duration="612000" />
-      <workItem from="1543328956035" duration="3634000" />
+      <workItem from="1543328956035" duration="4098000" />
+      <workItem from="1543384392444" duration="43000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95081000" />
+    <option name="totallyTimeSpent" value="95588000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -495,7 +491,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24614395" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -790,7 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +806,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="650">
           <caret line="26" column="1" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="26" selection-end-column="1" />
           <folding />
         </state>
@@ -828,7 +822,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/search.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
+        <state relative-caret-position="450">
           <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="70" />
           <folding />
         </state>
@@ -836,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sw_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="600">
           <caret line="24" column="81" lean-forward="false" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
           <folding />
         </state>
@@ -844,7 +838,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/hw_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="375">
           <caret line="15" column="94" lean-forward="false" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
           <folding />
         </state>
@@ -852,7 +846,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/operations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
+        <state relative-caret-position="3875">
           <caret line="155" column="42" lean-forward="false" selection-start-line="155" selection-start-column="42" selection-end-line="155" selection-end-column="42" />
           <folding />
         </state>
@@ -877,7 +871,7 @@
     <entry file="file://$PROJECT_DIR$/config/settings.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
